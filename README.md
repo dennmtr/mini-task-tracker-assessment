@@ -23,7 +23,7 @@ To get this application running on your local machine, follow these steps:
     **Optionally:**
 
     ```bash
-    npm run tsc
+    npm run transpile
     ```
 
     `tsc` is the TypeScript compiler. By default, it looks for a tsconfig.json file in project root to determine how to compile the TypeScript files. It will compile all .ts files with default settings (outputting to the same directory).
@@ -32,8 +32,8 @@ Configuration files for TypeScript, ESLint, and Prettier are automatically gener
 
 ## Known Issues
 
-- **Fully Controlled:** The application's user interface (UI) and underlying model logic are within a single class. This design choice prioritizes simplicity and directness for the project's defined scope, limiting external interfaces to the primary rendering method
-- **Encapsulated Control:** MiniTaskTracker is designed for internal control, with no public methods exposed beyond the essential render function. This approach maintains a tight scope and minimizes external dependencies
+- **Encapsulated Control:** The application's user interface (UI) and underlying model logic are within a single class. This design choice prioritizes simplicity and directness for the project's defined scope, limiting external interfaces to the primary rendering method
+- **Fully Controlled:** MiniTaskTracker is designed for internal control, with no public methods exposed beyond the essential render function. This approach maintains a tight scope and minimizes external dependencies
 
 ## Bonus Features Implemented
 
